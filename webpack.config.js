@@ -8,6 +8,6 @@ module.exports = {
     filename: '2048.bundle.js'
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({title: '2048 Canvas'})
   ]
 };
