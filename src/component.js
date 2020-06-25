@@ -9,7 +9,7 @@ export default function component(width, height, color, x, y, type, obj) {
   this.score = 0;
   this.width = width;
   this.height = height;
-  this.speed = 2;
+  this.speed = 10;
   this.x = x;
   this.y = y;
   this.obj = obj;
@@ -36,6 +36,8 @@ export default function component(width, height, color, x, y, type, obj) {
       ctx.fillStyle = this.color;
       ctx.roundRect(x, y, width, height, 20, true, false);
       let size = 0.5 * width;
+      if (this.value > 1000)
+      size = 0.3 * width;
       ctx.font = "bold " + size + "px monospace";
       ctx.fillStyle = this.fontColor;
       ctx.textAlign = "center";

@@ -27,9 +27,9 @@ var Game = {
   },
   onStart: function() {
     window.onkeydown = (event) => {
-      if (event.code === "KeyQ" || event.code === "ArrowLeft")
+      if (event.code === "KeyA" || event.code === "KeyQ" || event.code === "ArrowLeft")
       this.addToBuffer("left");
-      else if (event.code === "KeyW" || event.code === "ArrowUp")
+      else if (event.code === "KeyW" || event.code === "KeyZ" || event.code === "ArrowUp")
       this.addToBuffer("up");
       else if (event.code === "KeyD" || event.code === "ArrowRight")
       this.addToBuffer("right");
